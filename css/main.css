@@ -100,6 +100,84 @@ body {
   margin-left: 0;
 }
 
+.footer_section {
+  padding: 6rem 0 4rem;
+  background-color: #101010;
+}
+
+.footer_section .logo {
+  display: block;
+  text-align: center;
+}
+
+.footer_section .logo img {
+  height: 65px;
+}
+
+.footer_section p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 3rem 0;
+}
+
+.footer_section h4 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.footer_section .social_icon {
+  margin-bottom: 2rem;
+}
+
+.footer_section .social_icon i {
+  color: #fff;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-right: .8rem;
+  transition: all 0.3s;
+}
+
+.footer_section .social_icon i:hover {
+  transform: scale(1.1);
+  background-color: #b56621;
+  border-color: #b56621;
+}
+
+.footer_section h3 {
+  color: #b56621;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 3rem 0 2.5rem;
+}
+
+.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_section ul li {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer_section ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.footer_section ul li a:hover {
+  padding-left: .5rem;
+  color: #ddd;
+}
+
 .header_section {
   padding: 3rem;
 }
@@ -235,7 +313,7 @@ body {
 
 /** slider_section end ****/
 .class_section {
-  padding: 10rem 0 7rem;
+  padding: 10rem 0 2rem;
   background-color: #eaeaea;
 }
 
@@ -244,6 +322,13 @@ body {
   border-radius: .8rem;
   text-align: center;
   background-color: #fff;
+  margin-bottom: 6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.class_section .all_class .single_class:hover {
+  transform: translateY(-0.5rem);
 }
 
 .class_section .all_class .single_class .icon_box {
@@ -277,4 +362,28 @@ body {
 
 .class_section .all_class .single_class h3 span {
   font-size: 1.6rem;
+}
+
+.copyright_section {
+  height: 6rem;
+  background-color: #000;
+  text-align: center;
+}
+
+.copyright_section p {
+  font-size: 1.8rem;
+  line-height: 6rem;
+  color: #fff;
+}
+
+.copyright_section p a {
+  text-decoration: none;
+  color: #b56621;
+  text-transform: uppercase;
+  margin-left: 0.2rem;
+  transition: all 0.3s;
+}
+
+.copyright_section p a:hover {
+  text-decoration: underline;
 }

@@ -15,7 +15,10 @@ $('.menu_slider').slick({
 $('.main_slider').slick({
   dots: true,
   arrows: false,
-  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  pauseOnHover: false,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
 
