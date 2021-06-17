@@ -1,0 +1,109 @@
+.checkout_section {
+    padding: 4rem 0;
+    background-color: #ececec;
+    .user_info {
+        background-color: #fff;
+        padding: 3rem;
+        box-shadow: 2px 2px 7px #babababa;
+        margin-bottom: 2rem;
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.6rem;
+            a {
+                color: #84472c;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .acc_check{
+            margin-bottom: 2rem;
+        }
+        label {
+            margin: 0.3rem 0 0 1rem !important;
+        }
+        .personal_info {
+            input,
+            textarea,
+            select {
+                font-size: 1.6rem;
+                color: #000;
+                padding: 8px 10px;
+                border: 0.1rem solid #b56621;
+                border-radius: 0px;
+                margin-bottom: 2.5rem;
+                &:focus {
+                    box-shadow: unset;
+                }
+                &::placeholder {
+                    color: #000;
+                }
+            }
+            select {
+                padding-left: 0.5rem;
+            }
+            textarea {
+                resize: none;
+            }
+        }
+    }
+    .amount_info{
+        background-color: #fff;
+        padding: 3rem;
+        box-shadow: 2px 2px 7px #babababa;
+        margin-bottom: 2rem;
+        h3{
+            font-size: 2rem;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .total,
+        .dv_charge,
+        .discount,
+        .grand_total{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #cecece;
+            margin-bottom: 2rem;
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+        .grand_total{
+            border-bottom: unset;
+            p{
+                font-weight: 600;
+            }
+        }
+        .input-group{
+            align-items: center;
+            label{
+                margin-left: 1.2rem !important;
+            }
+        }
+        .confirm_btn{
+            text-align: center;
+            margin-top: 2.5rem;
+            input{
+                background-color: #b56621;
+                height: 4.5rem;
+                padding: 0 1.8rem;
+                border: 1px solid #b56621;
+                color: #fff;
+                transition: all 0.3s;
+                &:hover{
+                    color: #b56621;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
