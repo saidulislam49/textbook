@@ -1,0 +1,83 @@
+
+/** slider_section start ****/
+.slider_section{
+    // background-color: #ff7c38;
+    .main_slider{
+        ul{
+            list-style: none;
+            text-align: center;
+            margin-top: -25px;
+            z-index: 999;
+            position: relative;
+            margin-bottom: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                margin: 0 4px;
+                button{
+                    color: transparent;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: #fff;
+
+                }
+            }
+            .slick-active button{
+                border-radius: 3rem;
+                width: 2.5rem;
+            }
+        }
+        .slider_item{
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+/** slider_section end ****/
+
+// Class seciton start
+.class_section{
+    padding: 10rem 0 7rem;
+    background-color: #eaeaea;
+    .all_class{
+        .single_class{
+            border: .3rem solid #b56621;
+            border-radius: .8rem;
+            text-align: center;
+            background-color: #fff;
+            .icon_box{
+                background-color: #b56621;
+                height: 8rem;
+                width: 8rem;
+                border-radius: 50%;
+                margin: -4.5rem auto 0;
+                i{
+                    font-size: 4.5rem;
+                    line-height: 8rem;
+                    color: #fff;
+                }
+            }
+            h4{
+                margin-top: 2rem;
+                font-size: 2.4rem;
+                color: #785f49;
+                font-weight: 600;
+            }
+            h3{
+                font-size: 3rem;
+                color: #b56621;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                span{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+// Class seciton end

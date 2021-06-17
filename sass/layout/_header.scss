@@ -1,0 +1,91 @@
+.header_section{
+    padding: 3rem;
+    .logo{
+        img{
+            height: 6.5rem;
+        }
+    }
+    .input-group{
+        input{
+            font-size: 1.8rem;
+            color: #636363;
+            height: 6.5rem;
+            line-height: 6.5rem;
+            padding-left: 2.5rem;
+            background-color: #f3f3f3;
+            border: unset;
+            border-radius: .4rem;
+            &:focus{
+                box-shadow: unset;
+                background-color: #f0f0f0;
+            }
+        }
+        span{
+            font-size: 2rem;
+            color: #a5a5a5;
+            height: 6.5rem;
+            line-height: 6.5rem;
+            background-color: #f3f3f3;
+            border: unset;
+            padding: 0 1.5rem;
+            border-radius: .4rem;
+            i{
+                transition: all 0.2s;
+            }
+            &:hover{
+                cursor: pointer;
+                i{
+                    color: #636363;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .cart{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        i{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 2.5rem;
+            color: #4d4d4d;
+            cursor: pointer;
+        }
+        .cart_amount {
+            position: absolute;
+            top: 45%;
+            left: 55%;
+            color: #fff;
+            background-color: #b56621;
+            text-align: center;
+            height: 2.5rem;
+            width: 2.5rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    .user{
+        height: 6.5rem;
+        line-height: 6.5rem;
+        text-align: center;
+        border: 2px solid #c4854d;
+        border-radius: .5rem;
+        color: #b56621;
+        font-size: 1.8rem;
+        cursor: pointer;
+        i.fa-user-circle{
+            margin-right: 1rem;
+            font-size: 2.5rem;
+            vertical-align: middle;
+        }
+        span{
+            i{
+                margin-left: .5rem;
+            }
+        }
+    }
+}
