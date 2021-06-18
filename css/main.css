@@ -693,6 +693,166 @@ body {
   margin-top: 0;
 }
 
+.product_detail_section {
+  background-color: #ececec;
+  padding: 4rem 0 5.5rem;
+}
+
+.product_detail_section .product_info {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 7px #babababa;
+  margin-bottom: 3rem;
+}
+
+.product_detail_section .product_info .thumbnail {
+  overflow: hidden;
+  text-align: center;
+}
+
+.product_detail_section .product_info .thumbnail img {
+  border: 1px solid #000;
+  padding: 2rem;
+  max-width: 100%;
+  max-height: 42rem;
+  transition: all 0.3s;
+}
+
+.product_detail_section .product_info .thumbnail img:hover {
+  background-color: #ddd;
+}
+
+.product_detail_section .product_info .info .top .product_name {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+.product_detail_section .product_info .info .top .author, .product_detail_section .product_info .info .top .publisher {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.product_detail_section .product_info .info .bottom {
+  margin-top: 10rem;
+}
+
+.product_detail_section .product_info .info .bottom del {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.product_detail_section .product_info .info .bottom .price {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.product_detail_section .product_info .info .bottom a {
+  height: 3.3rem;
+  line-height: 3.3rem;
+  background-color: #000;
+  display: inline-block;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: .3rem;
+  margin-right: 1.2rem;
+  transition: all .3s;
+}
+
+.product_detail_section .product_info .info .bottom a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.product_detail_section .product_info .info .bottom a i {
+  padding-right: 1rem;
+}
+
+.product_detail_section .product_info .info .bottom button {
+  height: 3.3rem;
+  line-height: 3.3rem;
+  background-color: #b56621;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #b56621;
+  border-radius: .3rem;
+  transition: all .3s;
+}
+
+.product_detail_section .product_info .info .bottom button:hover {
+  color: #b56621;
+  background-color: #fff;
+}
+
+.product_detail_section .product_info .info .bottom button i {
+  padding-right: 1rem;
+}
+
+.product_detail_section .product_info .info .bottom .social_icon {
+  margin-top: 2rem;
+}
+
+.product_detail_section .product_info .info .bottom .social_icon a {
+  height: 3.3rem;
+  width: 3.3rem;
+  line-height: 3.3rem;
+  margin-right: 1rem;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.product_detail_section .product_info .info .bottom .social_icon a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product_detail_section .product_info .info .bottom .social_icon a i {
+  padding-right: 0;
+}
+
+.product_detail_section .detail_and_review {
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 7px #babababa;
+}
+
+.product_detail_section .detail_and_review ul {
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.product_detail_section .detail_and_review ul li button {
+  border: 2px solid #b56621;
+  background-color: #fff;
+  color: #b56621;
+  border-radius: 0;
+  height: 4.5rem;
+  width: 12.5rem;
+}
+
+.product_detail_section .detail_and_review ul li button.active {
+  background-color: #b56621;
+  color: #fff;
+}
+
+.product_detail_section .detail_and_review p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #282828;
+  margin-bottom: 2rem;
+}
+
 @media all and (max-width: 767px) {
   .header_section .input-group {
     margin-top: 3rem;
@@ -719,6 +879,31 @@ body {
   }
   .header_section .user a i.fa-user-circle {
     font-size: 5rem;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .product_detail_section .product_info .info {
+    padding-left: 2rem;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .product_detail_section .product_info .info .bottom {
+    margin-top: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .product_detail_section .product_info .info {
+    margin-top: 2.5rem;
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .product_detail_section .product_info {
+    padding: 3rem 1.5rem;
   }
 }
 
