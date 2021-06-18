@@ -16,7 +16,7 @@ $('.main_slider').slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 5000,
   pauseOnHover: false,
   speed: 1000,
   slidesToShow: 1,

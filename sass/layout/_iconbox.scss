@@ -1,0 +1,35 @@
+
+.icon_box{
+    margin-top: 50px;
+    a{
+        text-decoration: none;
+    }
+    .icon-box_item {
+        text-align: center;
+        background: #f2f2f2;
+        border-radius: 7px;
+        padding: 20px;
+        box-shadow:3px 4px 6px #d1d1d1;
+        transition: all .3s;
+        margin-bottom: 20px;
+
+        &:hover{
+            box-shadow: unset; 
+        }
+        i{
+            font-size: 5rem;
+            color: #b96e2d;
+        }
+        h3{
+            font-size: 3rem;
+            color: #000;
+        }
+        p{
+            font-size: 1.6rem;
+            color: #000;
+        }
+    }
+}
+ 
+ 
+ 

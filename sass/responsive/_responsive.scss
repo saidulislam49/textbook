@@ -1,0 +1,29 @@
+
+@media all and (max-width: 767px){
+    .header_section .input-group { 
+        margin-top: 3rem;
+        input{
+            height: 5.5rem;
+        }
+        span{
+            height: 5.5rem;
+        } 
+    }
+    .header_section .user a{
+        height: 5.5rem;
+        line-height: 5.5rem; 
+        font-size: 1.6rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .header_section .user a{
+        border: none;
+    }
+    .header_section .user a span{
+        display: none;
+    }
+    .header_section .user a i.fa-user-circle { 
+        font-size: 5rem; 
+    }
+}
