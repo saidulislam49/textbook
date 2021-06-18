@@ -387,3 +387,141 @@ body {
 .copyright_section p a:hover {
   text-decoration: underline;
 }
+
+.checkout_section {
+  padding: 4rem 0;
+  background-color: #ececec;
+}
+
+.checkout_section .user_info {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 7px #babababa;
+  margin-bottom: 2rem;
+}
+
+.checkout_section .user_info h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.checkout_section .user_info p {
+  font-size: 1.6rem;
+}
+
+.checkout_section .user_info p a {
+  color: #84472c;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.checkout_section .user_info p a:hover {
+  text-decoration: underline;
+}
+
+.checkout_section .user_info .acc_check {
+  margin-bottom: 2rem;
+}
+
+.checkout_section .user_info label {
+  margin: 0.3rem 0 0 1rem !important;
+}
+
+.checkout_section .user_info .personal_info input,
+.checkout_section .user_info .personal_info textarea,
+.checkout_section .user_info .personal_info select {
+  font-size: 1.6rem;
+  color: #000;
+  padding: 8px 10px;
+  border: 0.1rem solid #b56621;
+  border-radius: 0px;
+  margin-bottom: 2.5rem;
+}
+
+.checkout_section .user_info .personal_info input:focus,
+.checkout_section .user_info .personal_info textarea:focus,
+.checkout_section .user_info .personal_info select:focus {
+  box-shadow: unset;
+}
+
+.checkout_section .user_info .personal_info input::placeholder,
+.checkout_section .user_info .personal_info textarea::placeholder,
+.checkout_section .user_info .personal_info select::placeholder {
+  color: #000;
+}
+
+.checkout_section .user_info .personal_info select {
+  padding-left: 0.5rem;
+}
+
+.checkout_section .user_info .personal_info textarea {
+  resize: none;
+}
+
+.checkout_section .amount_info {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 7px #babababa;
+  margin-bottom: 2rem;
+}
+
+.checkout_section .amount_info h3 {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.checkout_section .amount_info .total,
+.checkout_section .amount_info .dv_charge,
+.checkout_section .amount_info .discount,
+.checkout_section .amount_info .grand_total {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 2rem;
+}
+
+.checkout_section .amount_info .total p,
+.checkout_section .amount_info .dv_charge p,
+.checkout_section .amount_info .discount p,
+.checkout_section .amount_info .grand_total p {
+  margin-bottom: 1rem;
+}
+
+.checkout_section .amount_info .grand_total {
+  border-bottom: unset;
+}
+
+.checkout_section .amount_info .grand_total p {
+  font-weight: 600;
+}
+
+.checkout_section .amount_info .input-group {
+  align-items: center;
+}
+
+.checkout_section .amount_info .input-group label {
+  margin-left: 1.2rem !important;
+}
+
+.checkout_section .amount_info .confirm_btn {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.checkout_section .amount_info .confirm_btn input {
+  background-color: #b56621;
+  height: 4.5rem;
+  padding: 0 1.8rem;
+  border: 1px solid #b56621;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.checkout_section .amount_info .confirm_btn input:hover {
+  color: #b56621;
+  background-color: #fff;
+}
