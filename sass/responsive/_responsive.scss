@@ -4,7 +4,8 @@
         width: 80%;
     }
 }
-@media all and (max-width: 767px){
+@media all and (max-width: 768px){
+    /** header section **/
     .header_section .input-group { 
         margin-top: 3rem;
         input{
@@ -19,18 +20,129 @@
         line-height: 5.5rem; 
         font-size: 1.6rem;
     }
-}
-
-@media all and (max-width: 480px){
     .header_section .user a{
         border: none;
-    }
+        text-align: right;
+    } 
     .header_section .user a span{
         display: none;
     }
     .header_section .user a i.fa-user-circle { 
         font-size: 4rem;
+        margin-top: 1rem; 
+    }
+    /* section title */
+    .section_title h2 {
+        font-size: 38px; 
+    }
+    /**** call to action ****/
+    .callToAction_section {
+        padding: 4rem 0; 
+    }
+    
+}
+@media all and (max-width: 575px){
+    .header_section {
+        padding: .5rem .5rem 2rem; 
+    }
+    /**** product section ****/
+    .product_detail_section{
+        .product_info{
+            padding: 3rem 1.5rem;
+        }
+       
+    }
+    .product_title .title_text {
+        font-size: 1.7rem; 
+    }
+    /**** nav section *****/
+    .nav_section { 
+        height: 4.5rem;
+        line-height: 4.5rem; 
+    }
+    .nav_section ul li a { 
+        font-size: 1.5rem; 
+    }
+    .nav_section ul li a::after, .nav_section ul li a .active::after { 
+        height: 0.5rem; 
+    }
+    .footer_section { 
+        text-align: center;
+    }
+    // icon box
+    .icon_box .icon-box_item h3 {
+        font-size: 2.4rem; 
+        font-weight: 600;
+    }
+    /** slider section ***/
+    .slider_section .main_slider ul li button { 
+        height: 1rem;
+        width: 1rem; 
+    }
+    /*** call to action ***/
+    .callToAction_section .callToAction_text h2 {
+        font-size: 3.8rem; 
+    }
+    .callToAction_section .callToAction_text p {
+        font-size: 2rem; 
+    }
+    .callToAction_section .callToAction_text .border {
+        width: 33%; 
+    }
+}
+@media all and (max-width: 481px){
+    /*** header section ***/
+    .header_section .user a i.fa-user-circle {  
         margin-top: 2rem; 
+    }
+    .copyright_section p {
+        font-size: 1.5rem; 
+    }
+    // class section
+    .class_section .all_class .single_class .icon_box { 
+        height: 6rem;
+        width: 6rem; 
+    }
+    .class_section .all_class .single_class .icon_box i {
+        font-size: 3.5rem;
+        line-height: 8rem; 
+    }
+    .class_section .all_class .single_class h4 { 
+        font-size: 2rem; 
+    }
+    .class_section .all_class .single_class h3 {
+        font-size: 2rem; 
+    }
+    /*** publisher section **/
+    .publishers_section .publisher_category .publisher_single_category .publisher_category_title h3 {
+        font-size: 25px; 
+    }
+    // section title
+    .section_title h2 {
+        font-size: 28px;
+    }
+    .section_title p {
+        font-size: 13px; 
+    }
+    // icon box
+    .icon_box .icon-box_item h3 {
+        font-size: 1.6rem; 
+    }
+    .icon_box .icon-box_item p {
+        font-size: 1.2rem; 
+    }
+    .icon_box .icon-box_item i {
+        font-size: 3rem; 
+    }
+    /****** call to action ******/
+    .callToAction_section {
+        padding: 2rem 0;
+    }
+    .callToAction_section .callToAction_text h2 {
+        font-size: 3rem;
+    }
+    .callToAction_section .callToAction_text .border { 
+        margin: .4rem auto; 
     }
 }
 
@@ -66,13 +178,7 @@
         }
     }
 }
-@media all and (max-width: 575px){
-    .product_detail_section{
-        .product_info{
-            padding: 3rem 1.5rem;
-        }
-    }
-}
+
 
 
 // Product and price by minhaj bro
@@ -149,5 +255,4 @@
     }
 }
 
-
-@media all and (max-width:576px){}
+ 

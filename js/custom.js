@@ -1,6 +1,6 @@
 // Slick slider js
 $('.menu_slider').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 8,
     slidesToScroll: 3,
     variableWidth: true,
@@ -9,6 +9,31 @@ $('.menu_slider').slick({
     dots: false,
     prevArrow: '.slick-prev',
     nextArrow: '.slick-next',
+
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {  
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: { 
+        slidesToScroll: 2,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: { 
+        slidesToScroll: 1,
+        dots: false
+      }
+    }
+   
+  ]
   });
 
    

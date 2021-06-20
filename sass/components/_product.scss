@@ -13,7 +13,9 @@
             &:hover{
                 box-shadow: unset;
             }
-    
+            &:hover .product_image::after{
+                height: 100%;
+            }
             .product_image{
                 border: 1px solid #000;
                 border-radius: .7rem .7rem 0 0;
@@ -21,8 +23,24 @@
                 height: 25rem;
                 overflow: hidden;
                 background: linear-gradient(#b56621, #fff5ec);
+                position: relative;
+                
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: linear-gradient(#fff5ec, #b56621);
+                    transition: all .5s;
+                }
+
                 img{
                     width: 100%;
+                    position: relative;
+                    z-index: 9999;
                 }
             }
             .product_details{
