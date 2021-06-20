@@ -4,22 +4,7 @@
     .products{
         margin-bottom: 7rem;
 
-        .product_title{
-            margin-top: 3rem;
-            .title_text{
-                font-size: 2.7rem;
-                background: #b56621;
-                color: #fff;
-                padding: 0.3rem 3rem .2rem 1.5rem;
-                border-radius: 0px 25px 0px 0px;
-            }
-            .title_underline{
-                display: block;
-                background: #b56621;
-                height: 2px;
-                margin-top: 2px;
-            }
-        }
+         
         .single_product{
             box-shadow: 3px 3px 5px #d0d0d0;;
             border-radius: 1rem;
@@ -113,4 +98,23 @@
         }
     }
     
+}
+
+// product title 
+
+.product_title{
+    margin-top: 3rem;
+    .title_text{
+        font-size: 2.7rem;
+        background: #b56621;
+        color: #fff;
+        padding: 0.3rem 3rem .2rem 1.5rem;
+        border-radius: 0px 25px 0px 0px;
+    }
+    .title_underline{
+        display: block;
+        background: #b56621;
+        height: 2px;
+        margin-top: 2px;
+    }
 }

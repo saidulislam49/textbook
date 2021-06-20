@@ -7,19 +7,20 @@
 @import "base/utilities";
 
 @import "components/navigation";
+@import "components/modal";
+@import "components/iconbox";
+@import "components/publisher";
+@import "components/calltoaction";
+@import "components/product";
 
 @import "layout/footer";
 @import "layout/header";
-@import "layout/iconbox";
-@import "layout/publisher";
-@import "layout/calltoaction";
-@import "layout/product";
 
 @import "pages/home";
 @import "pages/institute";
 @import "pages/checkout";
 @import "pages/product_detail";
-@import "pages/product_and_price";
+@import "pages/cart";
 
 
 @import "responsive/responsive";

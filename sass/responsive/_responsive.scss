@@ -1,4 +1,9 @@
 
+@media all and (min-width: 1200px){
+    .header_section .logo img {
+        width: 80%;
+    }
+}
 @media all and (max-width: 767px){
     .header_section .input-group { 
         margin-top: 3rem;
@@ -24,7 +29,8 @@
         display: none;
     }
     .header_section .user a i.fa-user-circle { 
-        font-size: 5rem; 
+        font-size: 4rem;
+        margin-top: 2rem; 
     }
 }
 

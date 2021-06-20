@@ -45,7 +45,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-1 col-md-1 col-2 order-2 order-md-3">
+                <div class="col-lg-1 col-md-1 col-2 order-2 order-md-3 align-self-center">
                     <div class="cart">
                         <i class="fas fa-shopping-basket"></i>
                         <span class="cart_amount">1</span>
@@ -74,10 +74,9 @@
                 <i class="fas fa-angle-right slick-next"></i>
             </div>
             <ul class="menu_slider">
-                <li><a class="active" href="#">হোম পেইজ</a></li>
-                <li><a href="#">হোম পেইজ</a></li>
-                <li><a href="#">প্রকাশনী</a></li>
-                <li><a href="#">মাদরাসা</a></li>
+                <li><a class="active" href="index.html">হোম পেইজ</a></li> 
+                <li><a href="publication.html">প্রকাশনী</a></li>
+                <li><a href="institute.html">মাদরাসা</a></li>
                 <li><a href="#">স্কুল</a></li>
                 <li><a href="#">কলেজ</a></li>
                 <li><a href="#">জাতীয় বিশ্ববিদ্যালয়</a></li>
@@ -88,7 +87,7 @@
                 <li><a href="#">ইউনিভার্সিটি</a></li>
                 <li><a href="#">জব, বিসিএস</a></li>
                 <li><a href="#">ইসলামী বই</a></li>
-                <li><a href="#">ষ্টেশনারী</a></li>
+                <li><a href="stationary.html">ষ্টেশনারী</a></li>
             </ul>
         </div>
     </nav>
@@ -118,32 +117,115 @@
         <div class="container">
             <div class="all_class">
                 <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="single_class">
+                    <div class="col-xl-3 col-lg-4 col-sm-6"> 
+                        <div class="single_class" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div class="icon_box">
                                 <i class="flaticon-guide"></i>
                             </div>
                             <h4>গাইড</h4>
                             <h3>জেএসসি/জেডিসি</h3>
-                        </div>
+                        </div> 
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h1 class="modal-title" id="staticBackdropLabel">ক্লাস বাছাই করুন</h1> 
+                                </div>
+                                <div class="modal-body">
+                                    <div class="publisher_name">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <a href="class.html">জেএসসি</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="class.html">জেডিসি</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
+
                     </div>
                     <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="single_class">
+                        <div class="single_class" data-bs-toggle="modal" data-bs-target="#madrasahschool">
                             <div class="icon_box">
                                 <i class="flaticon-guide"></i>
                             </div>
                             <h4>গাইড</h4>
                             <h3>নবম ও দশম</h3>
                         </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="madrasahschool" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h1 class="modal-title" id="staticBackdropLabel">প্রতিষ্ঠান বাছাই করুন</h1> 
+                                </div>
+                                <div class="modal-body">
+                                    <div class="publisher_name">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <a href="#">মাদ্রাসা</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#">স্কুল</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
+
                     </div>
                     <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="single_class">
+                        <div class="single_class" data-bs-toggle="modal" data-bs-target="#interAlim">
                             <div class="icon_box">
                                 <i class="flaticon-guide"></i>
                             </div>
                             <h4>গাইড</h4>
                             <h3>ইন্টার/আলিম</h3>
                         </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="interAlim" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h1 class="modal-title" id="staticBackdropLabel">ক্লাস বাছাই করুন</h1> 
+                                </div>
+                                <div class="modal-body">
+                                    <div class="publisher_name">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <a href="#">আলিম</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#">ইন্টার</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
                     </div>
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="single_class">
