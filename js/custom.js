@@ -21,6 +21,7 @@ $('.menu_slider').slick({
     {
       breakpoint: 600,
       settings: { 
+        infinite: true,
         slidesToScroll: 2,
         infinite: true,
         dots: false
@@ -29,7 +30,8 @@ $('.menu_slider').slick({
     {
       breakpoint: 480,
       settings: { 
-        slidesToScroll: 1,
+        infinite: true,
+        slidesToScroll: 2,
         dots: false
       }
     }

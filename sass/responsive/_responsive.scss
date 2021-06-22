@@ -78,8 +78,13 @@
     .header_section .input-group span {
         height: 4.5rem;
     }
-    .category_section {
-        padding: 4rem 0 3rem;
+    /** category section **/
+    .category_section .section_title { 
+        margin-top: 2rem;
+    }
+    .category_section .section_title {
+        text-align: center;
+        margin-top: 2rem;
     }
     .class_section {
         padding: 6rem 0 0;
@@ -185,7 +190,7 @@
         font-size: 1.8rem;
     }
     .class_section .all_class .single_class h3 span {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .class_section .all_class .single_class .icon_box i {
         font-size: 3.5rem;
