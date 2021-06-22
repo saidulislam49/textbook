@@ -149,7 +149,7 @@ body {
   padding: 20px;
   box-shadow: 3px 4px 6px #d1d1d1;
   transition: all .3s;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .icon_box .icon-box_item:hover {
@@ -238,7 +238,7 @@ body {
   text-align: center;
   display: block;
   transition: all .3s;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .publisher_name a:hover {
@@ -280,11 +280,11 @@ body {
 }
 
 .product_section {
-  padding: 3rem 0 5rem;
+  padding: 3rem 0 0;
 }
 
 .product_section .products {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .product_section .products .single_product {
@@ -325,6 +325,7 @@ body {
 
 .product_section .products .single_product .product_image img {
   width: 100%;
+  height: 100%;
   position: relative;
   z-index: 9999;
 }
@@ -783,14 +784,6 @@ body {
   text-decoration: underline;
 }
 
-.checkout_section .user_info .acc_check {
-  margin-bottom: 2rem;
-}
-
-.checkout_section .user_info label {
-  margin: 0.3rem 0 0 1rem !important;
-}
-
 .checkout_section .user_info .personal_info input,
 .checkout_section .user_info .personal_info textarea,
 .checkout_section .user_info .personal_info select {
@@ -860,14 +853,6 @@ body {
 
 .checkout_section .amount_info .grand_total p {
   font-weight: 600;
-}
-
-.checkout_section .amount_info .input-group {
-  align-items: center;
-}
-
-.checkout_section .amount_info .input-group label {
-  margin-left: 1.2rem !important;
 }
 
 .checkout_section .amount_info .confirm_btn {
@@ -1087,8 +1072,7 @@ body {
 .product_count_section .total_product .scrolable {
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-top: 2.8rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   background-color: #ffffff;
   box-shadow: 2px 3px 10px #c3c3c3;
 }
@@ -1216,6 +1200,14 @@ body {
   background-color: #b56621;
   margin-top: 2.5rem;
   display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.product_count_section .check_out a:hover {
+  color: #b56621;
+  background-color: #fff;
+  border: 1px solid #b56621;
 }
 
 .product_count_section form {
@@ -1240,18 +1232,38 @@ body {
   box-shadow: unset;
 }
 
-.product_count_section form .input-group .input-group-text {
+.product_count_section form .input-group a {
   text-decoration: none;
   background-color: #b56621;
-  border: .2rem solid #b56621;
   color: #ffffff;
   border-radius: 0;
+  border-left: .4px solid transparent;
+  padding: .5rem 1.2rem;
   font-size: 1.7rem;
+  transition: all 0.3s;
+}
+
+.product_count_section form .input-group a:hover {
+  color: #b56621;
+  background-color: #fff;
+  border-left: .4rem solid #b56621;
 }
 
 @media all and (min-width: 1200px) {
+  .header_section .cart {
+    margin-top: 0;
+  }
   .header_section .logo img {
     width: 80%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .header_section .cart {
+    margin-top: 0;
+  }
+  .product_detail_section .product_info .info {
+    padding-left: 2rem;
   }
 }
 
@@ -1265,6 +1277,9 @@ body {
   }
   .header_section .input-group span {
     height: 5.5rem;
+  }
+  .header_section .cart {
+    margin-top: 2rem;
   }
   .header_section .user a {
     height: 5.5rem;
@@ -1282,6 +1297,13 @@ body {
     font-size: 4rem;
     margin-top: 1rem;
   }
+  .category_section {
+    padding: 6rem 0 4rem;
+  }
+  .icon_box .icon-box_item h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
   /* section title */
   .section_title h2 {
     font-size: 38px;
@@ -1296,12 +1318,45 @@ body {
   .header_section {
     padding: .5rem .5rem 2rem;
   }
+  .header_section .input-group input {
+    height: 4.5rem;
+  }
+  .header_section .input-group span {
+    height: 4.5rem;
+  }
+  .category_section {
+    padding: 4rem 0 3rem;
+  }
+  .class_section {
+    padding: 6rem 0 0;
+  }
+  .icon_box {
+    margin-top: 3rem;
+  }
+  .publishers_section {
+    padding: 4rem 0 3rem;
+  }
+  .publishers_section .publisher_category .publisher_single_category {
+    margin-bottom: 3rem;
+  }
   /**** product section ****/
   .product_detail_section .product_info {
     padding: 3rem 1.5rem;
   }
+  .product_section {
+    padding: 0;
+  }
+  .product_section .products {
+    margin-bottom: 4rem;
+  }
+  .product_section .products .single_product {
+    margin-top: 1.5rem;
+  }
   .product_title .title_text {
     font-size: 1.7rem;
+  }
+  .product {
+    margin-right: 3rem;
   }
   /**** nav section *****/
   .nav_section {
@@ -1317,9 +1372,8 @@ body {
   .footer_section {
     text-align: center;
   }
-  .icon_box .icon-box_item h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
+  .footer_section {
+    padding: 2rem 0;
   }
   /** slider section ***/
   .slider_section .main_slider ul li button {
@@ -1336,11 +1390,23 @@ body {
   .callToAction_section .callToAction_text .border {
     width: 33%;
   }
+  .checkout_section .user_info {
+    padding: 2rem;
+  }
+  .checkout_section {
+    padding: 3rem 0 1rem;
+  }
+  .category_section {
+    padding: 0 0 2rem;
+  }
 }
 
 @media all and (max-width: 481px) {
   /*** header section ***/
   .header_section .user a i.fa-user-circle {
+    margin-top: 2rem;
+  }
+  .header_section .input-group {
     margin-top: 2rem;
   }
   .copyright_section p {
@@ -1349,6 +1415,16 @@ body {
   .class_section .all_class .single_class .icon_box {
     height: 6rem;
     width: 6rem;
+    margin: -3rem auto 0;
+  }
+  .class_section .all_class .single_class {
+    margin-bottom: 4rem;
+  }
+  .class_section .all_class .single_class h3 {
+    font-size: 1.8rem;
+  }
+  .class_section .all_class .single_class h3 span {
+    font-size: 1.4rem;
   }
   .class_section .all_class .single_class .icon_box i {
     font-size: 3.5rem;
@@ -1370,11 +1446,14 @@ body {
   .section_title p {
     font-size: 13px;
   }
+  .icon_box .icon-box_item {
+    padding: 2rem 1rem;
+  }
   .icon_box .icon-box_item h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .icon_box .icon-box_item p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .icon_box .icon-box_item i {
     font-size: 3rem;
@@ -1388,12 +1467,6 @@ body {
   }
   .callToAction_section .callToAction_text .border {
     margin: .4rem auto;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .product_detail_section .product_info .info {
-    padding-left: 2rem;
   }
 }
 

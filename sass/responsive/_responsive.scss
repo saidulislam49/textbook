@@ -1,7 +1,23 @@
 
 @media all and (min-width: 1200px){
+    .header_section .cart {
+        margin-top: 0;
+    }
     .header_section .logo img {
         width: 80%;
+    }
+}
+// Product detail page responsive
+@media all and (max-width: 1200px){
+    .header_section .cart {
+        margin-top: 0;
+    }
+    .product_detail_section{
+        .product_info{
+            .info{
+                padding-left: 2rem;
+            }
+        }
     }
 }
 @media all and (max-width: 768px){
@@ -14,6 +30,9 @@
         span{
             height: 5.5rem;
         } 
+    }
+    .header_section .cart {
+        margin-top: 2rem;
     }
     .header_section .user a{
         height: 5.5rem;
@@ -31,6 +50,14 @@
         font-size: 4rem;
         margin-top: 1rem; 
     }
+    .category_section {
+        padding: 6rem 0 4rem;
+    }
+    // icon box
+    .icon_box .icon-box_item h3 {
+        font-size: 2.4rem; 
+        font-weight: 600;
+    }
     /* section title */
     .section_title h2 {
         font-size: 38px; 
@@ -45,6 +72,27 @@
     .header_section {
         padding: .5rem .5rem 2rem; 
     }
+    .header_section .input-group input {
+        height: 4.5rem;
+    }
+    .header_section .input-group span {
+        height: 4.5rem;
+    }
+    .category_section {
+        padding: 4rem 0 3rem;
+    }
+    .class_section {
+        padding: 6rem 0 0;
+    }
+    .icon_box {
+        margin-top: 3rem;
+    }
+    .publishers_section {
+        padding: 4rem 0 3rem;
+    }
+    .publishers_section .publisher_category .publisher_single_category {
+        margin-bottom: 3rem;
+    }
     /**** product section ****/
     .product_detail_section{
         .product_info{
@@ -52,8 +100,22 @@
         }
        
     }
+    // Product section
+    .product_section {
+        padding: 0;
+    }
+    .product_section .products {
+        margin-bottom: 4rem;
+    }
+    .product_section .products .single_product {
+        margin-top: 1.5rem;
+    }
     .product_title .title_text {
         font-size: 1.7rem; 
+    }
+    // Cart
+    .product {
+        margin-right: 3rem;
     }
     /**** nav section *****/
     .nav_section { 
@@ -69,10 +131,8 @@
     .footer_section { 
         text-align: center;
     }
-    // icon box
-    .icon_box .icon-box_item h3 {
-        font-size: 2.4rem; 
-        font-weight: 600;
+    .footer_section {
+        padding: 2rem 0;
     }
     /** slider section ***/
     .slider_section .main_slider ul li button { 
@@ -89,11 +149,25 @@
     .callToAction_section .callToAction_text .border {
         width: 33%; 
     }
+    // Checkout page responsive code
+    .checkout_section .user_info {
+        padding: 2rem;
+    }
+    .checkout_section {
+        padding: 3rem 0 1rem;
+    }
+    // Institute page
+    .category_section {
+        padding: 0 0 2rem;
+    }
 }
 @media all and (max-width: 481px){
     /*** header section ***/
     .header_section .user a i.fa-user-circle {  
         margin-top: 2rem; 
+    }
+    .header_section .input-group {
+        margin-top: 2rem;
     }
     .copyright_section p {
         font-size: 1.5rem; 
@@ -101,7 +175,17 @@
     // class section
     .class_section .all_class .single_class .icon_box { 
         height: 6rem;
-        width: 6rem; 
+        width: 6rem;
+        margin: -3rem auto 0;
+    }
+    .class_section .all_class .single_class {
+        margin-bottom: 4rem;
+    }
+    .class_section .all_class .single_class h3 {
+        font-size: 1.8rem;
+    }
+    .class_section .all_class .single_class h3 span {
+        font-size: 1.4rem;
     }
     .class_section .all_class .single_class .icon_box i {
         font-size: 3.5rem;
@@ -117,6 +201,7 @@
     .publishers_section .publisher_category .publisher_single_category .publisher_category_title h3 {
         font-size: 25px; 
     }
+
     // section title
     .section_title h2 {
         font-size: 28px;
@@ -125,11 +210,14 @@
         font-size: 13px; 
     }
     // icon box
+    .icon_box .icon-box_item {
+        padding: 2rem 1rem;
+    }
     .icon_box .icon-box_item h3 {
-        font-size: 1.6rem; 
+        font-size: 1.8rem; 
     }
     .icon_box .icon-box_item p {
-        font-size: 1.2rem; 
+        font-size: 1.4rem; 
     }
     .icon_box .icon-box_item i {
         font-size: 3rem; 
@@ -147,16 +235,6 @@
 }
 
 
-// Product detail page responsive
-@media all and (max-width: 1200px){
-    .product_detail_section{
-        .product_info{
-            .info{
-                padding-left: 2rem;
-            }
-        }
-    }
-}
 @media all and (max-width: 992px){
     .product_detail_section{
         .product_info{
@@ -187,6 +265,7 @@
 
 
 @media all and (max-width:1200px){
+
     .product_count_section .total_product .total_product_list .list .price {
         margin-left: 3.2rem;
     }
