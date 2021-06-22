@@ -19,6 +19,45 @@
             }
         }
     }
+    .product_count_section .total_product .total_product_list .list .price {
+        margin-left: 3.2rem;
+    }
+    .product_count_section .total_product .total_product_list .list .book_description {
+        margin-right: 1.9rem;
+    }
+}
+@media all and (max-width: 992px){
+    .product_detail_section{
+        .product_info{
+            .info{
+                .bottom{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    .product_count_section form label {
+        font-size: 1.7rem;
+    }
+    .product_count_section .check_out a {
+        text-decoration: none;
+        padding: 0.7rem 1.2rem;
+    }
+    .product_count_section .count_at_a_glance .total .main_heading {
+        font-size: 1.7rem;
+    }
+    .product_count_section .total_product .total_product_count .product .main_heading {
+        font-size: 1.7rem;
+    }
+    .product_count_section .total_product .total_product_count .total_amount .main_heading {
+        font-size: 1.7rem;
+    }
+    .product_count_section .total_product .total_product_list .list .book_description .main_heading {
+        font-size: 1.7rem;
+    }
+    .product_count_section .total_product .total_product_list .list .price .main_heading {
+        font-size: 1.7rem;
+    }
 }
 @media all and (max-width: 768px){
     /** header section **/
@@ -66,6 +105,45 @@
     .callToAction_section {
         padding: 4rem 0; 
     }
+    .product_detail_section{
+        .product_info{
+            .info{
+                margin-top: 2.5rem;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .product {
+        margin-right: 5rem;
+    }
+    .product_count_section .count_at_a_glance .count .main_heading {
+        font-size: 1.7rem;
+    }
+    .product_count_section .count_at_a_glance .count .main_heading {
+        margin-bottom: 2rem;
+    }
+    .product_count_section .total_product .total_product_list .list .input-group {
+        width: -1rem;
+    }
+    .product_count_section .total_product .total_product_list .list .book {
+        margin-right: 3rem;
+    }
+    .product_count_section .total_product .total_product_list .list .input-group {
+        width: 9rem;
+    }
+    .input-group-text {
+        border-radius:unset; 
+    }
+    .product_count_section .count_at_a_glance .total .sub {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+    .product_count_section .check_out a {
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.3rem;
+    }
     
 }
 @media all and (max-width: 575px){
@@ -81,11 +159,7 @@
     /** category section **/
     .category_section .section_title { 
         margin-top: 2rem;
-    }
-    .category_section .section_title {
-        text-align: center;
-        margin-top: 2rem;
-    }
+    } 
     .class_section {
         padding: 6rem 0 0;
     }
@@ -238,105 +312,7 @@
         margin: .4rem auto; 
     }
 }
-
-
-@media all and (max-width: 992px){
-    .product_detail_section{
-        .product_info{
-            .info{
-                .bottom{
-                    margin-top: 2rem;
-                }
-            }
-        }
-    }
-}
-@media all and (max-width: 768px){
-    .product_detail_section{
-        .product_info{
-            .info{
-                margin-top: 2.5rem;
-                padding-left: 0;
-            }
-        }
-    }
-}
-
-
-
-// Product and price by minhaj bro
-
-
-
-
-@media all and (max-width:1200px){
-
-    .product_count_section .total_product .total_product_list .list .price {
-        margin-left: 3.2rem;
-    }
-    .product_count_section .total_product .total_product_list .list .book_description {
-        margin-right: 1.9rem;
-    }
-}
-
-
-@media all and (max-width:992px){
-    .product_count_section form label {
-        font-size: 1.7rem;
-    }
-    .product_count_section .check_out a {
-        text-decoration: none;
-        padding: 0.7rem 1.2rem;
-    }
-    .product_count_section .count_at_a_glance .total .main_heading {
-        font-size: 1.7rem;
-    }
-    .product_count_section .total_product .total_product_count .product .main_heading {
-        font-size: 1.7rem;
-    }
-    .product_count_section .total_product .total_product_count .total_amount .main_heading {
-        font-size: 1.7rem;
-    }
-    .product_count_section .total_product .total_product_list .list .book_description .main_heading {
-        font-size: 1.7rem;
-    }
-    .product_count_section .total_product .total_product_list .list .price .main_heading {
-        font-size: 1.7rem;
-    }
-}
-
-
-@media all and (max-width:768px){
-    .product {
-        margin-right: 5rem;
-    }
-    .product_count_section .count_at_a_glance .count .main_heading {
-        font-size: 1.7rem;
-    }
-    .product_count_section .count_at_a_glance .count .main_heading {
-        margin-bottom: 2rem;
-    }
-    .product_count_section .total_product .total_product_list .list .input-group {
-        width: -1rem;
-    }
-    .product_count_section .total_product .total_product_list .list .book {
-        margin-right: 3rem;
-    }
-    .product_count_section .total_product .total_product_list .list .input-group {
-        width: 9rem;
-    }
-    .input-group-text {
-        border-radius:unset; 
-    }
-    .product_count_section .count_at_a_glance .total .sub {
-        font-size: 1.5rem;
-        margin-left: 3rem;
-    }
-    .product_count_section .check_out a {
-        text-decoration: none;
-        padding: 0.8rem 2rem;
-        font-size: 1.3rem;
-    }
-}
-
+ 
+ 
+ 
  
