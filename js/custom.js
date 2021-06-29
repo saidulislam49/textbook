@@ -1,26 +1,26 @@
 // Slick slider js
 $('.menu_slider').slick({
-    infinite: false,
-    slidesToShow: 8,
-    slidesToScroll: 3,
-    variableWidth: true,
-    arrows: true,
-    autoplay: false,
-    dots: false,
-    prevArrow: '.slick-prev',
-    nextArrow: '.slick-next',
+  infinite: false,
+  slidesToShow: 8,
+  slidesToScroll: 3,
+  variableWidth: true,
+  arrows: true,
+  autoplay: false,
+  dots: false,
+  prevArrow: '.slick-prev',
+  nextArrow: '.slick-next',
 
-      responsive: [
+  responsive: [
     {
       breakpoint: 1024,
-      settings: {  
+      settings: {
         infinite: true,
         dots: false
       }
     },
     {
       breakpoint: 600,
-      settings: { 
+      settings: {
         infinite: true,
         slidesToScroll: 2,
         infinite: true,
@@ -29,17 +29,17 @@ $('.menu_slider').slick({
     },
     {
       breakpoint: 480,
-      settings: { 
+      settings: {
         infinite: true,
         slidesToScroll: 2,
         dots: false
       }
     }
-   
-  ]
-  });
 
-   
+  ]
+});
+
+
 $('.main_slider').slick({
   dots: true,
   arrows: false,
@@ -74,6 +74,13 @@ $('.main_slider').slick({
   //       slidesToScroll: 1
   //     }
   //   }
-   
+
   // ]
+});
+
+// image aspect height
+$(function () {
+  var div_width = $('.product_image').width();
+  var div_height = div_width * 143 / 100;
+  $('.product_image').css({ 'height': div_height + 'px' });
 });

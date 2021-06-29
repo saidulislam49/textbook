@@ -1,7 +1,7 @@
 
 @media all and (min-width: 1200px){
     .header_section .cart {
-        margin-top: 0;
+        margin-top: 2rem;
     }
     .header_section .logo img {
         width: 80%;
@@ -63,12 +63,7 @@
     /** header section **/
     .header_section .input-group { 
         margin-top: 3rem;
-        input{
-            height: 5.5rem;
-        }
-        span{
-            height: 5.5rem;
-        } 
+        
     }
     .header_section .cart {
         margin-top: 2rem;
@@ -313,6 +308,12 @@
     }
 }
  
+@media all and (max-width: 395px){
+    .icon_box .icon-box_item { 
+        min-height: 160px;
+        padding-bottom: 0;
+    }
+}
  
  
  

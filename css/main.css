@@ -59,7 +59,7 @@ body {
 .nav_section ul li a {
   display: inline-block;
   text-decoration: none;
-  color: #999999;
+  color: #ffffff;
   font-size: 1.8rem;
   padding: 0 1rem;
   position: relative;
@@ -81,7 +81,7 @@ body {
 }
 
 .nav_section ul li a:hover {
-  color: #fff;
+  color: #999999;
 }
 
 .nav_section ul li a:hover::after {
@@ -100,6 +100,10 @@ body {
   margin-left: 0;
 }
 
+.class_section .modal {
+  background-color: #0000008a;
+}
+
 .class_section .modal-dialog {
   max-width: 40rem;
   margin: 1.75rem auto;
@@ -109,25 +113,31 @@ body {
   border-bottom: 0;
 }
 
+.class_section .modal-title {
+  color: #fff;
+}
+
 .class_section .modal-body {
   padding-bottom: 0;
 }
 
 .class_section .modal-content {
   width: 100%;
-  background-color: #cfcdcf;
+  background-color: #b56621;
+  padding: 0;
 }
 
 .class_section .modal-footer {
   justify-content: center;
   border-top: 0;
-  padding-top: 0;
+  padding-bottom: .8rem;
 }
 
 .class_section .modal-footer button {
   font-size: 1.6rem;
-  background: #b56621;
-  border-color: #b56621;
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000;
 }
 
 .class_section .modal-footer button:focus {
@@ -183,6 +193,7 @@ body {
 .publishers_section .publisher_category .publisher_single_category .publisher_category_title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 2rem;
 }
 
@@ -195,6 +206,7 @@ body {
   text-decoration: none;
   color: #b56621;
   font-size: 1.5rem;
+  background-color: #ffffff;
   border-radius: .6rem;
   box-shadow: 2px 3px 6px #c2bfbf;
   padding: 7px 10px;
@@ -239,10 +251,30 @@ body {
   display: block;
   transition: all .3s;
   margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 9999;
 }
 
 .publisher_name a:hover {
   box-shadow: unset;
+  color: #fff;
+}
+
+.publisher_name a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background: #b56621;
+  z-index: -1;
+  border-radius: 50% 50% .5rem .5rem;
+  transition: all .3s;
+}
+
+.publisher_name a:hover::after {
+  height: 85%;
 }
 
 .callToAction_section {
@@ -252,6 +284,7 @@ body {
 
 .callToAction_section .callToAction_text {
   text-align: center;
+  font-family: inherit;
 }
 
 .callToAction_section .callToAction_text h2 {
@@ -306,7 +339,7 @@ body {
   border: 1px solid #000;
   border-radius: .7rem .7rem 0 0;
   padding: 1rem;
-  height: 25rem;
+  height: 28rem;
   overflow: hidden;
   background: linear-gradient(#b56621, #fff5ec);
   position: relative;
@@ -428,6 +461,52 @@ body {
   margin-top: 2px;
 }
 
+.small_button {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.small_button a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background: #fff;
+  font-weight: 500;
+  text-align: center;
+  transition: all .3s;
+  display: inline-block;
+  margin-left: .5rem;
+  margin-right: 0.5rem;
+  min-width: 150px;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 999;
+}
+
+.small_button a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background: #b56621;
+  z-index: -1;
+  border-radius: 50% 50% .5rem .5rem;
+  transition: all .3s;
+}
+
+.small_button a:hover {
+  color: #fff;
+}
+
+.small_button a:hover::after {
+  height: 85%;
+}
+
 .footer_section {
   padding: 6rem 0 4rem;
   background-color: #101010;
@@ -547,8 +626,8 @@ body {
 .header_section .input-group input {
   font-size: 1.8rem;
   color: #636363;
-  height: 6.5rem;
-  line-height: 6.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
   padding-left: 2.5rem;
   background-color: #f3f3f3;
   border: unset;
@@ -563,8 +642,8 @@ body {
 .header_section .input-group span {
   font-size: 2rem;
   color: #a5a5a5;
-  height: 6.5rem;
-  line-height: 6.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
   background-color: #f3f3f3;
   border: unset;
   padding: 0 1.5rem;
@@ -616,8 +695,8 @@ body {
 }
 
 .header_section .user a {
-  height: 6.5rem;
-  line-height: 6.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
   text-align: center;
   border: 2px solid #c4854d;
   border-radius: .5rem;
@@ -1251,7 +1330,7 @@ body {
 
 @media all and (min-width: 1200px) {
   .header_section .cart {
-    margin-top: 0;
+    margin-top: 2rem;
   }
   .header_section .logo img {
     width: 80%;
@@ -1305,12 +1384,6 @@ body {
   /** header section **/
   .header_section .input-group {
     margin-top: 3rem;
-  }
-  .header_section .input-group input {
-    height: 5.5rem;
-  }
-  .header_section .input-group span {
-    height: 5.5rem;
   }
   .header_section .cart {
     margin-top: 2rem;
@@ -1536,5 +1609,12 @@ body {
   }
   .callToAction_section .callToAction_text .border {
     margin: .4rem auto;
+  }
+}
+
+@media all and (max-width: 395px) {
+  .icon_box .icon-box_item {
+    min-height: 160px;
+    padding-bottom: 0;
   }
 }

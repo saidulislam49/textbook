@@ -1,6 +1,8 @@
 
 .class_section{
-
+    .modal{
+        background-color: #0000008a;
+    }
     .modal-dialog {
         max-width: 40rem;
         margin: 1.75rem auto;
@@ -8,24 +10,27 @@
     .modal-header { 
         border-bottom: 0; 
     }
+    .modal-title { 
+        color: #fff;
+    }
     .modal-body{
         padding-bottom: 0;
     }
     .modal-content { 
         width: 100%; 
-        background-color: #cfcdcf;
-         
+        background-color: #b56621;
+        padding: 0;
     }
     .modal-footer { 
         justify-content: center;  
-        border-top: 0; 
-        padding-top: 0;
+        border-top: 0;  
+        padding-bottom: .8rem;
 
         button{
             font-size: 1.6rem;
-            background: #b56621;
-            border-color: #b56621;
-            
+            background: #ffffff;
+            border-color: #ffffff;
+            color: #000;
             &:focus{
                 box-shadow: unset;
             }
